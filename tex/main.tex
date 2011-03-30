@@ -1,0 +1,45 @@
+%%%%%%%%------------------------------------------------------------------------
+% Name: XeTeX+xeCJK日常使用模板
+% Author: Xiao Hanyu
+% Email: xiaohanyu1988@gmail.com
+% Homepage: http://cnlox.is-programmer.com
+% 
+% 本文档可以自由转载、修改，希望能给广大TeXer的中文之路提供一些方便。
+%%%%%%%%------------------------------------------------------------------------
+
+%%%%%%%%------------------------------------------------------------------------
+%%%% 导言区
+%% 设定纸张大小为A4, 基本字体大小为12pt, 文章题目单独为一页， 
+%% 文档类型为article
+\documentclass[a4paper, 12pt, titlepage]{article}
+
+%% en_preamble包含基本的宏包配置
+\input{data/en_preamble}
+
+%% 如果不写中文的话就不需要引用xecjk_preamble里面的配置
+\input{data/xecjk_preamble}
+
+%%%% 导言区结束
+%%%%%%%%------------------------------------------------------------------------
+
+%%%%%%%%------------------------------------------------------------------------
+%%%% 正文部分
+
+\begin{document}
+
+%% 中文习惯是设定首行缩进为2em。注意此设置一定要在document环境之中，这可能与\setlength作用范围相关
+\setlength{\parindent}{2em}                    
+
+\include{data/title}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\include{data/content}
+\include{data/appendix}
+\include{data/bib}
+
+\end{document}
+%%%% 正文部分结束
+%%%%%%%%------------------------------------------------------------------------
