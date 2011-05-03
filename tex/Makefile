@@ -1,6 +1,7 @@
 tex=xelatex
+tex_files=${wildcard data/*tex}
 
-build: main.tex
+build: main.tex ${tex_files}
 	@mkdir -p build/data
 	${tex} -output-dir=build main.tex
 	${tex} -output-dir=build main.tex
@@ -23,7 +24,8 @@ clean_auctex_auto:
 
 clean_backup_files:
 	@echo "clean backup files"
-	rm -rf main.tex~
+	find . -name '*~' | xargs rm -rf 		# clean emacs backup files
+	find . -name '*.swp' | xargs rm -rf		# clean vim backup files 
 
 cleanall: clean clean_auctex_auto clean_backup_files
 	rm -rf main.pdf
