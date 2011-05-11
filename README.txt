@@ -8,40 +8,43 @@ You can contact <xiaohanyu1988@gmail.com> for project details
 
 Files:
 .
-|-- CHANGES.txt
-|-- IDEs
-|   |-- emacs
-|   |-- kile
-|   |-- lyx
-|   `-- vim
-|-- LICENSE.txt
-|-- README.txt
-|-- scripts
-|   |-- install_texlive
-|   |   |-- confs
-|   |   |   |-- Arch.conf
-|   |   |   |-- Debian.conf
-|   |   |   |-- Fedora.conf
-|   |   |   |-- Mandrake.conf
-|   |   |   |-- Redhat.conf
-|   |   |   |-- Slackware.conf
-|   |   |   |-- SuSE.conf
-|   |   |   `-- Ubuntu.conf
-|   |   |-- dist_install.sh
-|   |   `-- README
-|   `-- install_xecjk
-|       `-- install_xecjk.sh
-`-- tex
-    |-- data
-    |   |-- appendix.tex
-    |   |-- bib.tex
-    |   |-- content.tex
-    |   |-- en_preamble.tex
-    |   |-- main.bib
-    |   |-- title.tex
-    |   `-- xecjk_preamble.tex
-    |-- images
-    |   `-- hand_in_hand.png
-    |-- main.tex
-    `-- Makefile
+├── CHANGES.txt
+├── IDEs
+│   ├── emacs
+│   ├── kile
+│   ├── lyx
+│   └── vim
+├── LICENSE.txt
+├── README.txt
+├── scripts
+│   ├── install_cjk_fonts
+│   │   └── install_cjk_fonts.sh
+│   ├── install_texlive
+│   │   ├── confs
+│   │   │   ├── Arch.conf
+│   │   │   ├── Debian.conf
+│   │   │   ├── Fedora.conf
+│   │   │   ├── Mandrake.conf
+│   │   │   ├── Redhat.conf
+│   │   │   ├── Slackware.conf
+│   │   │   ├── SuSE.conf
+│   │   │   └── Ubuntu.conf
+│   │   ├── dist_install.sh
+│   │   └── README
+│   └── install_xecjk
+│       └── install_xecjk.sh
+└── tex
+    ├── data
+    │   ├── appendix.tex
+    │   ├── bib.tex
+    │   ├── content.tex
+    │   ├── en_preamble.tex
+    │   ├── main.bib
+    │   ├── title.tex
+    │   └── xecjk_preamble.tex
+    ├── images
+    │   └── hand_in_hand.png
+    ├── main.tex
+    └── Makefile
 
+13 directories, 25 files

@@ -1,0 +1,7 @@
+Version 0.02
+- add a script to install necessary fonts
+- improve Makefile rules
+- small corrections to xeCJK options
+
+Version 0.01
+- initial version 

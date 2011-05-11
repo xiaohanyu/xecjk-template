@@ -35,5 +35,3 @@
   (setq TeX-show-compilation t))  ;; 在新窗口显示编译过程
 (setq TeX-output-view-style '(("^pdf$" "." "okular %o %(outpage)")))
 (add-hook 'LaTeX-mode-hook 'auctex)
-
-;
