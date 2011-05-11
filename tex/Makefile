@@ -7,10 +7,10 @@ build: main.tex ${tex_files}
 	${tex} -output-dir=build main.tex
 	@cp build/main.pdf main.pdf
 
-html:
+html: main.tex
 	tth -u main.tex
 
-rtf:
+rtf: main.tex
 	latex2rtf main.tex
 
 view:
@@ -30,3 +30,4 @@ clean_backup_files:
 cleanall: clean clean_auctex_auto clean_backup_files
 	rm -rf main.pdf
 	rm -rf main.html
+	rm -rf main.rtf
