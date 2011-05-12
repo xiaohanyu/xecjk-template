@@ -22,7 +22,7 @@ clean:
 	rm -rf main.pdf
 
 clean_auctex_auto:
-	rm -rf auto
+	find . -name auto | xargs rm -rf
 
 clean_backup_files:
 	@echo "clean backup files"
