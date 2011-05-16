@@ -68,4 +68,7 @@ if [ $yes_or_no == "Y" ]
 then
     source confs/${DIST}.conf
     $install_cmd $install_software
+else 
+    echo "Sorry, Your system is not supported now"
+    echo "exiting..."
 fi
