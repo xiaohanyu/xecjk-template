@@ -61,6 +61,11 @@ check_uid
 
 linux_dist
 
-source confs/${DIST}.conf
+echo "Your system is $DIST Linux, am I right?(Y/N): "
+read yes_or_no
 
-$install_cmd $install_software
+if [ $yes_or_no == "Y" ]
+then
+    source confs/${DIST}.conf
+    $install_cmd $install_software
+fi
