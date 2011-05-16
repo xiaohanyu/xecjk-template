@@ -1,3 +1,8 @@
+Version 0.03
+- add a sample .vimrc file
+- add some interactive options to dist_install.sh script
+- improve tarball release script
+
 Version 0.02
 - add a script to install necessary fonts
 - improve Makefile rules
