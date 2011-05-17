@@ -28,6 +28,7 @@ clean_backup_files:
 	@echo "clean backup files"
 	find . -name '*~' | xargs rm -rf 		# clean emacs backup files
 	find . -name '*.swp' | xargs rm -rf		# clean vim backup files 
+	find . -name '*.bak' | xargs rm -rf		# clean some .bak files
 
 cleanall: clean clean_auctex_auto clean_backup_files
 	rm -rf main.html
