@@ -5,6 +5,9 @@ tex_files=$(wildcard data/*tex)
 main.pdf: main.tex $(tex_files)
 	@mkdir -p build/data
 	$(XELATEX) -output-dir=build main.tex
+	@cp data/main.bib build/data
+	@cd build/; bibtex main 
+	$(XELATEX) -output-dir=build main.tex
 	$(XELATEX) -output-dir=build main.tex
 	@mv build/main.pdf main.pdf
 
@@ -17,7 +20,7 @@ rtf: main.tex
 view:
 	$(VIEW_PDF)	main.pdf
 
-.PHONY clean clean_auctex_auto clean_backup_files cleanall
+.PHONY: clean clean_auctex_auto clean_backup_files cleanall
 clean:
 	rm -rf build
 	rm -rf main.pdf

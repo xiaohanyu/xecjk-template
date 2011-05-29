@@ -51,7 +51,11 @@
 
 \include{data/content}
 \include{data/appendix}
-\include{data/bib}
+
+%% 加入参考文献支持
+\bibliography{data/main}
+%% 解决目录中没有相应的参考文献的条目问题
+\addcontentsline{toc}{section}{\refname} 
 
 \end{document}
 %%%% 正文部分结束
