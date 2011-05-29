@@ -17,6 +17,7 @@ rtf: main.tex
 view:
 	$(VIEW_PDF)	main.pdf
 
+.PHONY clean clean_auctex_auto clean_backup_files cleanall
 clean:
 	rm -rf build
 	rm -rf main.pdf
