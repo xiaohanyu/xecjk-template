@@ -1,0 +1,6 @@
+2011-05-29
+1. add support to book class, not only article
+2. add automatic test to Makefile to test the system properties, such as pdf viewer
+3. add automatic compilation to Makefile, don't compile from scratch, it should be sensitable to already compiled progress
+4. add support and test for Windows and Mac platform, maybe a windows .bat file is needed
+5. add documentation to this project
