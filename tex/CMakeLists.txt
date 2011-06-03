@@ -21,16 +21,19 @@ set(PDFLATEX_COMPILER xelatex)
 
 set(INPUTS_TEX_FILES
    data/appendix.tex
-   data/bib.tex
    data/content.tex
    data/en_preamble.tex
    data/title.tex
    data/xecjk_preamble.tex
 )
 
+set(BIB_FILE
+    data/main.bib
+)
+
 ADD_LATEX_DOCUMENT(main.tex
    INPUTS ${INPUTS_TEX_FILES}
    IMAGE_DIRS images
+   BIBFILES ${BIB_FILE}
    DEFAULT_PDF
 )
-

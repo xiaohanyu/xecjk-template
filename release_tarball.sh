@@ -7,4 +7,4 @@ VERSION=$1
 make -f tex/Makefile cleanall
 
 tar czvf xecjk-template-${VERSION}.tar.gz tex
-tar czvf xecjk-template-all-${VERSION}.tar.gz CHANGES README LICENSE IDEs scripts tex
+tar czvf xecjk-template-all-${VERSION}.tar.gz TODO CHANGES README LICENSE IDEs scripts tex

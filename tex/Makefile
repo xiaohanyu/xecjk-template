@@ -1,16 +1,20 @@
 XELATEX		?=		xelatex
 VIEW_PDF	?=		okular
-tex_files=$(wildcard data/*tex)
+tex_files 	= 		$(wildcard data/*tex)
 
 main.pdf: main.tex $(tex_files)
 	@mkdir -p build/data
+
 	$(XELATEX) -output-dir=build main.tex
+
 	## http://tex.stackexchange.com/questions/12686/how-do-i-run-bibtex-after-using-the-output-directory-flag-with-pdflatex-when-fi
 	## compiling bib file using bibtex
 	@cp data/main.bib build/data
 	@cd build/; bibtex main 
+
 	$(XELATEX) -output-dir=build main.tex
 	$(XELATEX) -output-dir=build main.tex
+
 	@mv build/main.pdf main.pdf
 
 html: main.tex
