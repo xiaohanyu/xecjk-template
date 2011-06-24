@@ -1,3 +1,5 @@
 syntax: glob
 *.tar.gz
 *.tgz
+tex/build/*
+tex/*.pdf

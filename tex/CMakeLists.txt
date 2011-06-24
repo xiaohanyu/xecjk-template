@@ -23,7 +23,6 @@ set(INPUTS_TEX_FILES
    data/appendix.tex
    data/content.tex
    data/en_preamble.tex
-   data/title.tex
    data/xecjk_preamble.tex
 )
 
