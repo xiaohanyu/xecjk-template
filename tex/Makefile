@@ -1,8 +1,9 @@
 XELATEX		?=		xelatex
 VIEW_PDF	?=		okular
-tex_files 	= 		$(wildcard data/*tex)
+tex_files 	?= 		$(wildcard data/*tex)
+bib_files 	?= 		$(wildcard data/main.bib)
 
-main.pdf: main.tex $(tex_files)
+main.pdf: main.tex $(tex_files) $(bib_files)
 	@mkdir -p build/data
 
 	$(XELATEX) -output-dir=build main.tex
