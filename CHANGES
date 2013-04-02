@@ -1,3 +1,8 @@
+Version 0.05
+- remove title.tex
+- add bibtex support in CMakeLists.txt
+- other small improvements
+
 Version 0.03
 - add a sample .vimrc file
 - add some interactive options to dist_install.sh script
