@@ -1,5 +1,12 @@
-this template provide a daily use xelatex template with xeCJK support,
-and provide installation of texlive environment on various linux distributions. 
+This is a stopped repo, which contains some outdated TeX code.
+
+And if you want to use TeX with CJK fonts, I highly recommend you to check CTeX(http://www.ctex.org/HomePage) and its awesome ctex package(https://www.ctan.org/pkg/ctex?lang=en).
+
+The ctex package provide wonderful cross-platform experience, which built on top of xecjk.
+
+----
+
+This template provide a daily use xelatex template with xeCJK support, and provide installation of texlive environment on various linux distributions. 
 
 it also provide some advices about the TeX IDE, and will give some configuration in the futer.
 
